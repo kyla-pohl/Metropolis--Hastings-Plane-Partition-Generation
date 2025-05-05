@@ -1,8 +1,7 @@
 # Metropolis--Hastings-Plane-Partition-Generation
-The Metropolis--Hastings algorithm is a Markov Chain Monte Carlo algorithm which we employ here to construct a uniformly random boxed plane partition. This code is joint work of Kayla Wright, Ben Young, and myself.
+The Metropolis--Hastings algorithm is a Markov Chain Monte Carlo algorithm which we employ here to construct a uniformly random boxed plane partition. This code is joint work of [Kayla Wright](https://sites.google.com/view/kayla-wright), [Ben Young](https://pages.uoregon.edu/bjy/), and myself.
 
 A plane partition is an array of nonnegative integers which weakly decreases left to right and top to bottom. A plane partition may be viewed as a stack of boxes in the corner of a room, where the entry in the array in a given position is the number of boxes stacked in that location, or the height in that spot. Below is an example of a plane partition with 11 boxes in it.
-
 <pre> 
 3 2 2
 2 1 
@@ -21,7 +20,7 @@ The [Metropolis--Hastings algorithm](https://en.wikipedia.org/wiki/Metropolis–
 
 ----
 
-To generate a boxed plane partition iwth the M--H algorithm, we initialize the empty plane partition and add or delete boxes (which maintain the array as a plane partition) to move to other states. We pick a new state to walk to uniformly randomly and then accept with probability (number of legal steps from where we are now) / (number of legal steps we could make from the proposed plane partition) or 1, whichever is smaller. By [detailed balance](https://en.wikipedia.org/wiki/Detailed_balance), this should give us an equal chance of arriving at any boxed plane partition after sufficient mixing.
+To generate a boxed plane partition with the M--H algorithm, we initialize the empty plane partition and add or delete boxes which maintain the array as a plane partition to move to other states. We pick a new state to walk to uniformly randomly and then accept that step with probability (number of legal steps from where we are now) / (number of legal steps we could make from the proposed plane partition) or 1, whichever is smaller. By [detailed balance](https://en.wikipedia.org/wiki/Detailed_balance), this should give us an equal chance of arriving at any boxed plane partition after sufficient mixing.
 
 ----
 
