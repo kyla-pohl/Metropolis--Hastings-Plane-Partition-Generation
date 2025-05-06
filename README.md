@@ -1,5 +1,5 @@
 # Metropolis--Hastings-Plane-Partition-Generation
-The Metropolis--Hastings algorithm is a Markov Chain Monte Carlo algorithm which we employ here to construct a uniformly random boxed plane partition. This code is joint work of [Kayla Wright](https://sites.google.com/view/kayla-wright), [Ben Young](https://pages.uoregon.edu/bjy/), and myself.
+The Metropolis--Hastings algorithm is a Markov chain Monte Carlo algorithm which we employ here to construct a uniformly random boxed plane partition. This code is joint work of [Kayla Wright](https://sites.google.com/view/kayla-wright), [Ben Young](https://pages.uoregon.edu/bjy/), and myself.
 
 A plane partition is an array of nonnegative integers which weakly decreases left to right and top to bottom. A plane partition may be viewed as a stack of boxes in the corner of a room, where the entry in the array in a given position is the number of boxes stacked in that location, or the height in that spot. Below is an example of a plane partition with 11 boxes in it.
 
